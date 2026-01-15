@@ -8,6 +8,12 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 // Load environment variables
 dotenv.config();
 
+// Validate required environment variables
+if (!process.env.GEMINI_API_KEY) {
+  console.error('ERROR: GEMINI_API_KEY environment variable is not set!');
+  console.error('Please set GEMINI_API_KEY in your Render dashboard environment variables.');
+}
+
 const app = express();
 const port = process.env.PORT || 3001;
 
@@ -61,6 +67,15 @@ const kbContent = loadKnowledgeBase();
 app.post('/api/chat', async (req, res) => {
   const { message } = req.body;
   console.log('Received chat request:', message);
+  
+  // Check if API key is configured
+  if (!process.env.GEMINI_API_KEY) {
+    console.error('GEMINI_API_KEY not configured');
+    return res.status(500).json({ 
+      response: "I'm currently unavailable. The API key hasn't been configured yet. Please contact the administrator." 
+    });
+  }
+  
   try {
     // Use the first 2000 characters of the knowledge base as context
     const kbContext = kbContent.slice(0, 2000);
@@ -78,14 +93,18 @@ app.post('/api/chat', async (req, res) => {
         responseText = result.response.text();
       } catch (err2) {
         console.error('Both gemini-1.5-flash and gemini-1.5-pro failed:', err1, err2);
-        return res.status(500).json({ error: 'Gemini model not available', details: err2.message });
+        return res.status(500).json({ 
+          response: "I'm having trouble connecting to the AI service. Please try again in a moment." 
+        });
       }
     }
     console.log('Gemini response:', responseText);
     res.json({ response: responseText });
   } catch (error) {
     console.error('Error processing chat request:', error);
-    res.status(500).json({ error: 'Failed to process chat request', details: error.message });
+    res.status(500).json({ 
+      response: "I encountered an error processing your request. Please try again." 
+    });
   }
 });
 
