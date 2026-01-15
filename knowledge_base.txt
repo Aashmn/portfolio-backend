@@ -1,0 +1,55 @@
+Information about Aashmn extracted from portfolio website and resume:
+
+[Personal Information]
+Name: Aashmn
+Profession: AI/ML Engineer, Web Developer & Designer
+
+[Experience]
+AI/ML Intern at RaiseMatters (Feb 2025 - Present)
+- Developed and deployed an AI-powered chatbot using Botpress, integrating database connectivity for real-time defect management in factory operations.
+- Designed and implemented a Predictive Maintenance Model/Dashboard for Defense Equipment and Sensors, utilizing machine learning algorithms (Random Forest, XGBoost, LSTM) and real-time data visualization with Plotly. Also created a Flask webapp for Dashboard deployment.
+- Engaged in client interactions and requirement gathering, translating business needs into AI/ML solutions, optimizing model performance through hyperparameter tuning, and ensuring seamless deployment.
+- Conducted in-depth research on AI/ML advancements, collaborating with cross-functional teams to optimize project outcomes.
+
+ML Intern at Pythian Technologies (Aug 2024 - Sep 2024)
+- Developed RAG (Retrieval-Augmented Generation) applications, integrating them into FastAPI endpoints using the LlamaIndex framework for efficient data retrieval and processing.
+- Designed and deployed custom chatbots for clients, tailoring solutions to meet their specific business requirements and improving user engagement through advanced NLP techniques.
+- Gained in-depth knowledge of Large Language Models (LLMs) and contributed to projects utilizing frameworks such as LlamaIndex, LlamaParse, and LangChain to enhance model performance and scalability.
+
+[Education]
+2022 - 2026: B.Tech Computer Science and Engineering at Bennett University (CGPA: 7.1/10.0)
+2022: Class 12th CBSE Board from Mount St. Mary’s School (Percentage: 92.2%)
+2021: Class 10th CBSE Board from Mount St. Mary’s School (Percentage: 91%)
+
+[Skills]
+Technical Skills: Python, C++, SQL, HTML, CSS
+Libraries: TensorFlow, Pandas, Numpy, Scikit-learn, LlamaIndex, Matplotlib, Plotly
+Tools: VS Code, Cursor, Windsurf, Vercel, Git, MySQL Workbench, MongoDB, Canva, Jira
+Soft Skills: Communication, Problem-Solving, Adaptability, Critical Thinking, Creativity, Team Work, Leadership, Open to Challenges, Eager to Learn
+
+[Projects]
+Lawyer-ed! (Python, LlamaIndex, OpenAI)
+- Designed and implemented a chatbot capable of answering legal queries by leveraging a vector-based indexing system to retrieve contextually relevant sections from documents such as the Indian Constitution.
+- Utilized OpenAI’s GPT-3.5-Turbo model for natural language understanding and query processing, ensuring accurate and contextually appropriate responses to user inputs.
+- Built a pipeline to parse and index legal documents using node-based parsing, embedding generation, and metadata tagging, enabling efficient document retrieval based on user queries.
+
+Wind Speed Forecasting (Python, TensorFlow, LSTM-GRU, TCN-GRU, Matplotlib)
+- Developed an ultra-short-term multi-step wind speed prediction model for wind farms using advanced machine learning techniques, including Temporal Convolutional Networks (TCN) and various recurrent neural networks (RNNs) such as GRU, LSTM, and SimpleRNN.
+- Conducted comprehensive data analysis and preprocessing using Python libraries (NumPy, Pandas, Matplotlib) to prepare and visualize time series data from wind speed measurements.
+- Evaluated model performance through various metrics (MAE, RMSE, R²) and visualized predictions against actual data, leading to the identification of the most effective forecasting model for operational use.
+
+Wingo (C++, DSA)
+- C++-based social media interface tailored for students, emphasizing text-based interactions and messaging features.
+- Implemented key data structures like trees and sorting algorithms to enhance user experience, manage data efficiently, and optimize message delivery.
+- Focused on user-driven design, ensuring seamless navigation and communication within the platform through interactive, text-based features.
+
+[Online Courses]
+- Google Data Analytics (Coursera)
+- Object-Oriented Data Structures in C++ (Coursera)
+- Introduction to Agile Development and Scrum (Coursera)
+- Exploratory Data Analysis for Machine Learning (Coursera)
+- Algorithmic Toolbox (Coursera)
+- Supervised Machine Learning: Regression (Coursera)
+- Supervised Machine Learning: Classification (Coursera)
+- Practical Time Series Analysis (Coursera)
+- Simulation and Modeling of Natural Processes (Coursera)
